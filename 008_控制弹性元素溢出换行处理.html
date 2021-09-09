@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            padding-left: 50px;
+            padding-top: 15px;
+        }
+        article{
+            border: solid 5px silver;
+            width: 280px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;/*改变方向排列*/
+            flex-wrap: wrap;/*换行*/
+        }
+
+        article * {
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            background-clip: content-box;
+            margin: 10px;
+            box-sizing: border-box;
+            font-size: 35px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <!--    可以随便增加元素-->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </article>
+</body>
+</html>
