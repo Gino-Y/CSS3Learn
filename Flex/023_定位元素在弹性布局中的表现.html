@@ -1,0 +1,55 @@
+<!--未实现-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      padding-left: 50px;
+      padding-top: 15px;
+    }
+    article{
+      border: solid 5px silver;
+      width: 400px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+    article * {
+      background: blueviolet;
+      background-clip: content-box;
+      padding: 10px;
+      flex: 1;
+      font-size: 35px;
+      color: white;
+    }
+    /*article :nth-child(1){*/
+    /*  position: absolute; !*绝对空间定位*!*/
+    /*  background-color: #000;*/
+    /*  left: 100px;*/
+    /*  top: 200px;*/
+    /*}*/
+    article :nth-child(1){
+      position: relative; /*相对空间定位*/
+      background-color: #000;
+      left: 100px;
+      top: 200px;
+    }
+
+  </style>
+</head>
+
+<body>
+<article>
+  <!--    可以随便增加元素-->
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</article>
+</body>
+</html>
