@@ -1,0 +1,48 @@
+<!--未实现-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      padding-left: 50px;
+      padding-top: 15px;
+    }
+    article{
+      border: solid 5px silver;
+      width: 400px;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+    }
+    article div {
+      flex-basis: 100px;/*主轴基准尺寸*/
+      max-width: 50px;
+      /*flex-grow: 1;!*全缩放*!*/
+      width: 50px;
+      height: 100px;
+      background: blueviolet;
+      background-clip: content-box;
+      border:solid 1px blue; /*描边*/
+      padding: 10px; /*填充*/
+      /*margin: 10px;*/
+      box-sizing: border-box;
+      font-size: 35px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<article>
+  <!--    可以随便增加元素-->
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</article>
+</body>
+</html>
