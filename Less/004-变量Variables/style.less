@@ -7,3 +7,17 @@ header,footer{
 h1{
   color:@white;
 }
+
+//作为选择器和属性名的变量
+@kuandu:width;
+.@{kuandu}{
+  @{kuandu}:150px
+}
+
+//作为URL的变量
+@imgurl:"https://www.baidu.com/img";
+header{
+  background:@green url("@{imgurl}bdlogo.png");
+  height: 500px;
+}
+
