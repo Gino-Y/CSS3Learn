@@ -1,0 +1,14 @@
+header,
+footer {
+  background: #008000;
+}
+h1 {
+  color: #ffffff;
+}
+.width {
+  width: 150px;
+}
+header {
+  background: #008000 url("https://www.baidu.com/imgbdlogo.png");
+  height: 500px;
+}
